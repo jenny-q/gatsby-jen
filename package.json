@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "bootstrap": "^4.5.0",
+    "bulma": "^0.9.0",
     "gatsby": "^2.23.12",
     "gatsby-plugin-react-helmet": "^3.3.10",
     "gatsby-source-filesystem": "^2.3.20",

@@ -1,17 +1,34 @@
 import React from 'react';
-import {Navbar, Nav} from 'react-bootstrap';
-import {Link} from "gatsby";
+import { Link, Button } from "gatsby";
 
 export default (props) => (
-    <Navbar bg="light" expand="lg">
-    <Navbar.Brand href="/">jennifer quispe</Navbar.Brand>
-    <Navbar.Toggle aria-controls="basic-navbar-nav" />
-    <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="mr-auto">
-            <Nav.Link as={Link} to ="/about">About</Nav.Link>
-            <Nav.Link as={Link} to ="/">Portfolio</Nav.Link>
-            <Nav.Link as={Link} to ="/contact">Contact</Nav.Link>
-        </Nav>
-    </Navbar.Collapse>
-    </Navbar>
+    <div className="navbar" role="navigation" aria-label="main navigation">
+        <div className="container">
+            <div className="navbar-brand">
+                <Link className="navbar-item" to="/">
+                    jennifer quispe
+                </Link>
+            </div>
+            <div id="navbarBasicExample" className="navbar-menu">
+                <div className="navbar-start">
+                    <Link className="navbar-item" to="/portfolio">
+                        work
+                    </Link>
+                    
+                    <Link className="navbar-item" to="/articles">
+                        articles
+                    </Link>
+                </div>
+                <div className="navbar-end">
+                    <div className="navbar-item">
+                        <div className="buttons">
+                            <Link className="button is-light" to="/accessibility">
+                                accessibility options
+                            </Link>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 )
