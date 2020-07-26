@@ -1,19 +1,20 @@
 import React from 'react'
-import { Card, Button } from 'react-bootstrap'
+import { Link } from 'gatsby'
 
 const Post = (props) => (
-    <div className="p-3 col-md-3">
-        <Card>
-            <Card.Img variant="top" src="holder.js/100px180" />
-            <Card.Body>
-                <Card.Title>{props.title}</Card.Title>
-                <Card.Text>
-                    {props.excerpt}
-                </Card.Text>
-                <Button variant="primary" href={props.readMore}>View</Button>
-            </Card.Body>
-        </Card>
+    <Link to={props.readMore}  className="project__wrap">
+    <div className="project" id={props.title}>
+        <div className="project__column image">
+            <img className="project__img" src={props.image}/>
+        </div>
+        <div className="project__column copy">
+            <h2 className="project__title space">{props.title}</h2>
+            <p className="project__keywords">{props.excerpt}</p>
+            
+            <span className="project__link space">View Project<span className="sr-only"> for {props.title}</span></span>
+        </div>
     </div>
+    </Link>
 );
 
 export default Post;

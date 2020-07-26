@@ -10,7 +10,8 @@ export default ({ data }) => {
             <Posts
             key = {node.id}
             title={node.frontmatter.title}
-            excerpt={node.excerpt}
+            image={node.frontmatter.image}
+            excerpt={node.frontmatter.keywords}
             readMore={node.fields.slug}>
             </Posts>
         ))}
@@ -26,6 +27,7 @@ export const query = graphql`
             title
             date
             keywords
+            image
         }
         excerpt
         html

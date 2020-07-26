@@ -5,11 +5,7 @@ import Footer from "../components/Footer"
 const PrimaryLayout = (props) => (
     <div>
         <Header></Header>
-            <div className="container">
-                <div className="row">
-                        {props.children}
-                </div>
-            </div>
+            {props.children}
         <Footer></Footer>
     </div>
 );

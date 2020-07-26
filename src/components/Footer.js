@@ -3,7 +3,8 @@ import React from 'react';
 const Footer = () => (
     <footer>
         <div className="container">
-            <span className="text-muted">&copy; Jennifer Quispe 2012 - 2020</span>
+            <p>Built with GatsbyJS.</p>
+            <span className="space">&copy; Jennifer Quispe 2012 - 2020</span>
         </div>
     </footer>
 )

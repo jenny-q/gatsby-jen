@@ -1,0 +1,14 @@
+---
+title: "eMerge Americas"
+date: "2020-7-19"
+keywords: "wordpress, eventbrite, final cut pro, video editing, graphic design, ad creation"
+image: "../../emerge/emerge-videos.jpg"
+---
+
+- Closely collaborated with the Creative Director to execute the new marketing kit, which included a new WordPress site and new email templates.
+- Designed all assets for the 2015 LATAM eMerge Roadshow microsite, utilized by marketing agencies throughout South America.
+- Created custom video intros for all 2015 fireside talks and presentations using a wide range of development tools.
+- Managed a new WordPress development project in coordination with the GreenDot Agency, delivering an eye-catching new site design for 2016.
+
+![emerge video intro image](../../emerge/emerge-videos.jpg)
+![emerge latam promo](../../emerge/emerge2.jpg)

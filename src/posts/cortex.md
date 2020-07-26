@@ -1,0 +1,23 @@
+---
+title: "Cortex USA"
+date: "2020-7-19"
+keywords: "design concepts, wordpress, rebranding"
+image: "../../cortex/cortex-01.jpg"
+---
+
+- Redesigning their current websites and coming up with new concepts for the brand. 
+- Completed three websites, making them responsive for mobile and tablet.
+
+**Websites:**
+- www.beprousa.com
+- www.cortexprofessional.com
+- www.cortexusa.com
+
+![render of site](../../cortex/cortex-01.jpg)
+![render of site](../../cortex/cortex-02.jpg)
+![render of site](../../cortex/cortex-03.jpg)
+![render of site](../../cortex/cortex-04.jpg)
+![render of site](../../cortex/cortex-06.jpg)
+![render of site](../../cortex/cortex-07.jpg)
+![render of site](../../cortex/cortex-08.jpg)
+![render of site](../../cortex/cortex-09.jpg)

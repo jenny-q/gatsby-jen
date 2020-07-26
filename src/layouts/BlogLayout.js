@@ -9,8 +9,8 @@ const BlogLayout = ({ data }) => {
         <div>
             <Header></Header>
                 <div className="container">
-                    <div className="row">
-                        <h1>{post.frontmatter.title}</h1>
+                    <div className="work" id={post.frontmatter.title}>
+                        <h1 className="space">{post.frontmatter.title}</h1>
                         <div dangerouslySetInnerHTML={{__html: post.html}} />
                     </div>
                 </div>
@@ -28,6 +28,7 @@ query($slug: String!) {
         html
         frontmatter {
             title
+            image
         }
     }
 }

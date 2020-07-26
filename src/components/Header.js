@@ -1,34 +1,33 @@
 import React from 'react';
-import { Link, Button } from "gatsby";
+import { Link } from "gatsby";
 
 export default (props) => (
-    <div className="navbar" role="navigation" aria-label="main navigation">
-        <div className="container">
-            <div className="navbar-brand">
-                <Link className="navbar-item" to="/">
+    <header className="header">
+        <nav className="navigation container" role="navigation" aria-label="main navigation">
+            <div className="navigation__logo">
+                <Link className="navigation__link space" to="/">
                     jennifer quispe
                 </Link>
             </div>
-            <div id="navbarBasicExample" className="navbar-menu">
-                <div className="navbar-start">
-                    <Link className="navbar-item" to="/portfolio">
-                        work
+            <ul className="navigation__list">
+                <li className="navigation__item">
+                    <Link className="navigation__link space" to="#about">
+                        0. about
                     </Link>
-                    
-                    <Link className="navbar-item" to="/articles">
-                        articles
+                </li>
+
+                <li className="navigation__item">
+                    <Link className="navigation__link space" to="#portfolio">
+                        1. portfolio
                     </Link>
-                </div>
-                <div className="navbar-end">
-                    <div className="navbar-item">
-                        <div className="buttons">
-                            <Link className="button is-light" to="/accessibility">
-                                accessibility options
-                            </Link>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+                </li>
+
+                <li className="navigation__item">
+                    <Link className="navigation__link space" to="/resume">
+                        2. resume
+                    </Link>
+                </li>
+            </ul>
+        </nav>
+    </header>
 )
