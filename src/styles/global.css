@@ -352,9 +352,7 @@
 .project {
     align-items: center;
 }
-.navigation {
 
-}
 .project__title {
     font-weight: 100;
     font-size: 18px;
@@ -418,25 +416,46 @@ footer {
     transition: .2s;
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 150px;
+  background: #fff;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
 .navigation {
-    align-items: center;
     display: flex;
+    flex-direction: column;
 }
 
 .navigation__list {
-        margin-left: auto;
         display: flex;
         padding: 0;
         list-style: none;
+        flex-direction: column;
+}
+.navigation__list.bottom {
+  margin-top: auto;
 }
 
 .container {
     max-width: 100%;
-    padding: 0 15px;
+    margin: 0 auto;
 }
 
 .navigation__item {
-    padding: 0 10px;
+  margin: 0 0 7px;
 }
 
 #Resume {
@@ -455,18 +474,38 @@ footer {
 .navigation__link {
     text-decoration: none;
     color: #000;
+    padding: 14px 0;
+}
+
+.navigation__logo {
+  padding: 10px 0 0;
 }
 
 .navigation__logo .navigation__link {
     font-size: 20px;
+    text-shadow: -.0625rem -.0625rem 0 #6BFFFF, .0625rem .0625rem 0 #FF819E;
+}
+
+.gatsby-image-wrapper {
+  width: 100px;
+  min-width: 100px;
+  margin: 0 1rem 0 0;
+}
+
+.portfolio a {
+  color: #000;
+  text-decoration: none;
 }
 
 .about,
 .portfolio,
 .work {
     padding: 0;
-    width: 100%;
+    width: auto;
     margin: 0 auto;
+    margin-left: 150px;
+    padding: 20px;
+    background: #f1f1f1;
 }
 
 h1, h2, h3, h4, h5 {
@@ -517,8 +556,43 @@ ul, li, ol {
   .about,
   .portfolio,
   .work {
-      padding: 40px 15px;
-      width: 80%;
-      margin: 0 auto;
+  }
+}
+.portfolio .wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+@media (max-width: 786px) {
+  header {
+    bottom: unset;
+    left: 0;
+    right: 0;
+    width: auto;
+    padding: 0 10px;
+  }
+  .navigation__logo {
+    padding: 10px 10px 0;
+  }
+  .navigation__list.bottom {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 14px 0;
+  }
+  .navigation__item {
+    margin: 0;
+  }
+  .about, .portfolio, .work {
+    width: 100%;
+    margin: 0;
+    margin-top: 86px;
+    padding: 10px 20px;
+  }
+  .portfolio a {
+    font-size: 16px;
+    padding: 15px 0;
+  }
+  .portfolio .wrapper {
+    width: 100%;
+    margin: 0 auto;
   }
 }
