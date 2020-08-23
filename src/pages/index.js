@@ -13,6 +13,7 @@ export default () => {
         {posts.map(post => (
           <PostPreview key={post.slug} post={post} />
         ))}
+        <Insta />
       </Layout>
     </>
   );
